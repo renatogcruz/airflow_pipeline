@@ -35,3 +35,12 @@ A senha também pode ser encontrada na pasta de execução do Airflow, no arquiv
 
 No navegador, acessaremos `localhost:8080`, e logaremos com o usuário e senha que nos foram fornecidos para acessar a interface do Airflow.
 
+Quando queremos executar o Airflow, nós temos a opção de executar cada um de seus componentes de forma separada, inicializando o banco de dados do Airflow, executando o scheduler e o webserver. Tudo de forma manual. No entanto, também temos a opção de utilizar o comando:
+
+`airflow standalone`
+
+Esse comando já faz tudo de forma mais automática, ou seja, inicia o banco de dados padrão do airflow, cria um novo usuário e inicia os serviços principais (o webserver e o scheduler).
+
+Para finalizar a execução desses processos localmente, basta acessar o terminal onde o Airflow está sendo executado e pressionar Ctrl + C. É importante finalizar o processo antes de fechar o terminal para não termos problemas quando executarmos o Airflow novamente.
+
+Para mais informações, você pode acessar a [documentação do Airflow](https://airflow.apache.org/docs/apache-airflow/2.3.2/start/local.html#running-airflow-locally).
